@@ -14,7 +14,7 @@
     "vite": "4.4.9"
   },
   "dependencies": {
-    "@googlemaps/js-api-loader": "^1.16.2",
-    "centrifuge": "4.1.0"
+    "@googlemaps/js-api-loader": "1.16.2",
+    "centrifuge": "5.0.0"
   }
 }
