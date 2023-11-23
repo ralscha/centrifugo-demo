@@ -24,13 +24,13 @@ public class IssPositionService {
 		WebClient issNotifyWebClient = WebClient.builder().baseUrl(IssNotifyClient.ISS_NOTIFY_URL)
 				.build();
 		HttpServiceProxyFactory issNotifyClientFactory = HttpServiceProxyFactory
-				.builder(WebClientAdapter.forClient(issNotifyWebClient)).build();
+				.builderFor(WebClientAdapter.create(issNotifyWebClient)).build();
 		this.issNotifyClient = issNotifyClientFactory.createClient(IssNotifyClient.class);
 
 		WebClient centrifugoApiWebClient = WebClient.builder().baseUrl(centrifugoConfig.apiBaseUrl())
 				.build();
 		HttpServiceProxyFactory centrifugoApiCientFactory = HttpServiceProxyFactory
-				.builder(WebClientAdapter.forClient(centrifugoApiWebClient)).build();
+				.builderFor(WebClientAdapter.create(centrifugoApiWebClient)).build();
 		this.centrifugoApiClient = centrifugoApiCientFactory.createClient(CentrifugoApiClient.class);		
 	}
 	

@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/google.maps": "3.54.0",
-    "typescript": "5.2.2",
-    "vite": "4.4.9"
+    "@types/google.maps": "3.54.9",
+    "typescript": "5.3.2",
+    "vite": "5.0.2"
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "1.16.2",
